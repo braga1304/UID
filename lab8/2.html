@@ -1,0 +1,47 @@
+<html>
+<head>
+	<title>JS Regular Expressions</title>
+	<script>
+	function reg_expr(){
+		let text="I'm studying in Amrita Vishwa Vidyapeetham";
+		let n=text.search(/Amrita/i);
+		document.getElementById("p1").innerHTML="Amrita is in "+n+"th position";
+		}
+	function reg_expr1(){
+		let text=document.getElementById("demo1").innerHTML;
+		document.getElementById("demo1").innerHTML=text.replace(/work/i,"study");
+		}
+	</script>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+			}
+			
+		h1 a{
+			text-decoration:none;
+			}
+		.cont1{
+			margin-left:300px;
+			margin-right:300px;
+			background-color:#CC6699;
+			border-radius:10px;
+			}
+	</style>
+</head>
+<body bgcolor="#00CCCC">
+	<a href="..\index.html"><h3><button>INDEX</a></button></h3>
+	<h1 align="center" style="font-family:Georgia;margin-top:20px">Javascript Regular Expressions</h1><br><br>
+	<div class="cont1"><h2 align="center">Search</h2><br>
+	<h3><p style="margin-left:100px" id="demo">Sentence : I am working in Amrita"</p><br>
+	<button style="margin-left:100px;"  onclick="reg_expr()">Click</button><br><br></h3>
+	<p style="margin-left:100px" id="p1"></p><br><br></div>
+	<br><br><hr><br>
+	<div class="cont1"><h2 align="center">Replace</h2><br>
+	<h3><p style="margin-left:100px" id="demo1">I am working in Amrita</p><br>
+	<button style="margin-left:100px;"  onclick="reg_expr1()">Click</button><br><br></h3>
+	</div>
+<br><br>
+<center><button><a href="1.html"><h3>Javascript Mouse Events</h3></a></button></center>
+</body>
+</html>
